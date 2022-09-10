@@ -7,6 +7,6 @@ final providers = [
   BlocProvider<GetUsersCubit>(
     create: (_) => GetUsersCubit(
       UserModuleInjector.resolve<GetUser>(),
-    )..getUsers(),
+    ),
   ),
 ];

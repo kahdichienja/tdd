@@ -44,9 +44,9 @@ class StagingApp extends StatelessWidget {
         builder: (context, constraints) => OrientationBuilder(
           builder: (context, orientation) {
             SizerUtil.setScreenSize(constraints, orientation);
-            WidgetsBinding.instance.addPostFrameCallback((t) {
-              context.read<GetUsersCubit>().getUsers();
-            });
+            // WidgetsBinding.instance.addPostFrameCallback((t) {
+            //   context.read<GetUsersCubit>().getUsers();
+            // });
             return MaterialApp(
               title: 'Test Stage',
               debugShowCheckedModeBanner: false,
