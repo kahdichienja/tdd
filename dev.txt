@@ -1,0 +1,4 @@
+fvm flutter build apk -t lib/main.dart --release --flavor production --dart-define ENVIRONMENT_VAR=PRODUCTION
+fvm flutter build appbundle -t lib/main.dart --release --flavor production --dart-define ENVIRONMENT_VAR=PRODUCTION
+
+flutter build apk --split-per-abi --release --dart-define ENVIRONMENT_VAR=STAGING --flavor staging
